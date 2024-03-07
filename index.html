@@ -3,6 +3,7 @@
 
 
 <!-- Mirrored from eduvibe.html.devsvibe.com/index-five.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Feb 2024 06:27:30 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -26,6 +27,106 @@
     <link rel="stylesheet" href="assets/css/vendor/animation.css">
     <link rel="stylesheet" href="assets/css/vendor/jqueru-ui-min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+
+        /* Hide the images by default */
+        .mySlides {
+            display: none;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Caption text */
+        .text {
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #717171;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -62,15 +163,15 @@
                             </li>
 
                             <li><a href="#services">Services</a>
-                          
-                            </li>
-                            <li><a href="#">Gallery</a>
-                         
-                            </li>
-                            <li ><a href="#contact">Contact us</a>
 
                             </li>
-           
+                            <li><a href="#">Gallery</a>
+
+                            </li>
+                            <li><a href="#contact">Contact us</a>
+
+                            </li>
+
                         </ul>
                     </nav>
                 </div>
@@ -80,12 +181,13 @@
                         <div class="header-menu-bar">
 
                             <div class="quote-icon quote-user d-none d-md-block ml--15">
-                                <a class="edu-btn btn-medium left-icon btn-white" href="https://wa.me/8248212728"><i class="fa fa-whatsapp" style="font-size: 20px;"></i>Whatsapp</a>
+                                <a class="edu-btn btn-medium left-icon btn-white" href="https://wa.me/8248212728"><i
+                                        class="fa fa-whatsapp" style="font-size: 20px;"></i>Whatsapp</a>
                             </div>
 
-                            <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
+                            <!-- <div class="quote-icon quote-user d-block d-md-none ml--15 ml_sm--5">
                                 <a class="white-box-icon" href="login-register.html"><i class="ri-user-line"></i></a>
-                            </div>
+                            </div> -->
 
                             <div class="mobile-menu-bar ml--15 ml_sm--5 d-block d-xl-none">
                                 <div class="hamberger">
@@ -104,7 +206,7 @@
                 <div class="header-top">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="assets/images/logo/logo.png" alt="Site Logo" >
+                            <img src="assets/images/logo/logo.png" alt="Site Logo">
                         </a>
                     </div>
                     <div class="close-menu">
@@ -119,7 +221,7 @@
                     <li><a href="#service">Our Services</a> </li>
                     <li><a href="#">Gallery</a> </li>
                     <li><a href="#contact">Contact Us</a> </li>
-           
+
                 </ul>
             </div>
         </div>
@@ -132,15 +234,24 @@
                         <div class="col-lg-6 order-2 order-lg-1">
                             <div class="inner pt--100 pt_md--0 pt_sm--0">
                                 <div class="content text-start">
-                                    <h1 class="title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Welcome to Mr.Focus </h1>
-                                    <p class="description" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800" style="text-align: justify;"><b>Motivational Speaking Services!</b> <br> Empower your students with inspiration and motivation that lasts a lifetime. Through engaging speeches and interactive sessions, Mr.Focus ignites the spark within each student, empowering them to reach their full potential. With a focus on positivity, resilience, and personal growth, Mr.Focus delivers impactful messages that resonate with audiences of all ages.</p>
-                          
-                                    <div class="read-more-btn" data-sal-delay="350" data-sal="slide-up" data-sal-duration="800">
+                                    <h1 class="title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                        Welcome to Mr.Focus </h1>
+                                    <p class="description" data-sal-delay="250" data-sal="slide-up"
+                                        data-sal-duration="800" style="text-align: justify;"><b>Passionate Coach |
+                                            Motivational Speaking Services!</b> <br> Empower your students with
+                                        inspiration and motivation that lasts a lifetime. Through engaging speeches and
+                                        interactive sessions, Mr.Focus ignites the spark within each student, empowering
+                                        them to reach their full potential. With a focus on positivity, resilience, and
+                                        personal growth, Mr.Focus delivers impactful messages that resonate with
+                                        audiences of all ages.</p>
+
+                                    <div class="read-more-btn" data-sal-delay="350" data-sal="slide-up"
+                                        data-sal-duration="800">
                                         <a class="edu-btn" href="#">Get Started
                                             <i class="icon-arrow-right-line-right"></i>
                                         </a>
                                         <div class="video-btn-wrapper">
-                                            <a href="https://www.youtube.com/watch?v=pNje3bWz7V8" class="video-play-btn with-animation video-popup-activation">
+                                            <a href="#" class="video-play-btn with-animation video-popup-activation">
                                                 <span class="play-icon"></span>
                                             </a>
                                             <span class="video-text">Watch Video</span>
@@ -156,17 +267,8 @@
                                 </div>
                                 <div class="card-info bounce-slide">
                                     <div class="inner">
-                                        <div class="name">Palanikumar<span>/ Professior</span></div>
-                                        <div class="rating-wrapper d-flex">
-                                            <div class="rating eduvibe-course-rating-stars">
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                                <i class="icon-Star"></i>
-                                            </div>
-                                            <span>(2567)</span>
-                                        </div>
+                                        <div class="name">Palanikumar<span>/ Passionate Coach</span></div>
+
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +301,7 @@
         <!-- End Sldier Area  -->
 
         <!-- Start Brand Area  -->
-        <div class="edu-brand-area edu-section-gap bg-color-white edu-line-separator">
+        <!-- <div class="edu-brand-area edu-section-gap bg-color-white edu-line-separator">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -243,7 +345,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- End Brand Area  -->
 
 
@@ -253,7 +355,8 @@
                 <div class="row g-5 align-items-center">
                     <div class="col-xl-5 col-lg-6">
                         <div class="about-image-gallery">
-                            <img class="image-1 w-100" src="assets/images/about/about-08/about-image-09.jpg" alt="About Images">
+                            <img class="image-1 w-100" src="assets/images/about/about-08/about-image-09.jpg"
+                                alt="About Images">
                             <div class="badge-icon">
                                 <div class="badge-inner">
                                     <img src="assets/images/about/about-08/badge.png" alt="Icon Images">
@@ -265,20 +368,44 @@
                         <div class="inner mt_md--40 mt_sm--20">
                             <div class="section-title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                                 <span class="pre-title">About Us</span>
-                                <h3 class="title">Creating A Community Of Life Long Learners</h3>
+                                <h3 class="title">Welcome to Mr. Focus - Your Path to Passion and Purpose</h3>
                             </div>
-                            <p class="description line-before mt--40 mb--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800" style="text-align: justify;">Mr.Focus is a passionate and dynamic motivational speaker based in Theni, Tamil Nadu. With 10 years of experience in inspiring and empowering audiences, Mr.Focus is dedicated to making a difference in the lives of students across Tamil Nadu. Whether it's a school assembly, college seminar, or youth conference, Mr.Focus brings energy, enthusiasm, and a wealth of knowledge to every event.</p>
-                            <div class="feature-list-wrapper" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Goal Setting and Achievement</div>
-                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Overcoming Adversity</div>
-                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Leadership and Teamwork</div>
-                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Personal Growth and Development</div>
-                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Career and Professional Development</div>
-                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Inspiration and Motivation</div>
+                            <p class="description line-before mt--40 " data-sal-delay="150" data-sal="slide-up"
+                                data-sal-duration="800" style="text-align: justify;">Hello and welcome to Mr. Focus! I'm
+                                Palanikumar, your dedicated guide on the journey to discovering your passion and
+                                unlocking your full potential.</p>
+                            <p class="description line-before " data-sal-delay="150" data-sal="slide-up"
+                                data-sal-duration="800" style="text-align: justify;">At Mr. Focus, we believe that
+                                everyone deserves to live a life filled with passion, purpose, and fulfillment. With our
+                                personalized coaching approach, we're here to empower you to tap into your inner fire,
+                                clarify your goals, and take bold steps towards creating the life you truly desire.</p>
+                            <p class="description line-before " data-sal-delay="150" data-sal="slide-up"
+                                data-sal-duration="800" style="text-align: justify;">Let's ignite your passion and
+                                unleash your greatness together!</p>
+
+
+
+                            <div class="feature-list-wrapper" data-sal-delay="150" data-sal="slide-up"
+                                data-sal-duration="800">
+                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Goal Setting and
+                                    Achievement</div>
+                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Overcoming Adversity
+                                </div>
+                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Leadership and
+                                    Teamwork</div>
+                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Personal Growth and
+                                    Development</div>
+                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Career and
+                                    Professional Development</div>
+                                <div class="feature-list"><i class="icon-checkbox-circle-fill"></i>Inspiration and
+                                    Motivation</div>
                             </div>
-                            <div class="read-more-btn mt--75 mt_lg--30 mt_md--40 mt_sm--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                <a class="edu-btn" href="about-us-1.html">Know About Us<i class="icon-arrow-right-line-right"></i></a>
-                                <a class="info-btn" href="tel:+91 8248212728"><i class="icon-call"></i>+91 8248212728</a>
+                            <div class="read-more-btn mt--75 mt_lg--30 mt_md--40 mt_sm--40" data-sal-delay="150"
+                                data-sal="slide-up" data-sal-duration="800">
+                                <a class="edu-btn" href="about-us-1.html">Know About Us<i
+                                        class="icon-arrow-right-line-right"></i></a>
+                                <a class="info-btn" href="tel:+91 8248212728"><i class="icon-call"></i>+91
+                                    8248212728</a>
                             </div>
                         </div>
                     </div>
@@ -305,311 +432,18 @@
         <!-- End About Area  -->
 
         <!-- Start Featured Course  -->
-        <div class="eduvibe-home-five-course slider-dots edu-course-area edu-section-gap bg-image">
-            <div class="container eduvibe-animated-shape">
-                <div class="row g-5">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="section-title text-start" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                            <span class="pre-title">Our Courses</span>
-                            <h3 class="title">Featured Courses</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6">
-                        <div class="view-more-btn text-end">
-                            <a class="edu-btn" href="course-style-3.html">
-                                Browse All Coures
-                                <i class="icon-arrow-right-line-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-5 mt--10">
-                    <div class="col-lg-12">
-                        <div class="slick-activation-wrapper course-activation-3 edu-slick-button">
 
-                            <!-- Start Single Card  -->
-                            <div class="single-slick-card">
-                                <div class="edu-card card-type-5 radius-small">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="course-details.html">
-                                                <img class="w-100" src="assets/images/course/course-01/course-01.jpg" alt="Course Thumb">
-                                            </a>
-                                            <div class="top-position status-group left-top">
-                                                <span class="eduvibe-status status-01 bg-secondary-color">40% Off</span>
-                                                <span class="eduvibe-status status-01 bg-primary-color">Intermediate</span>
-                                            </div>
-                                            <div class="wishlist-top-right">
-                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="price-list price-style-03">
-                                                <div class="price current-price">$49.00</div>
-                                                <div class="price old-price">$29.00</div>
-                                            </div>
-                                            <h6 class="title"><a href="course-details.html">Preparing Youth for Here and Eternity</a></h6>
-                                            <ul class="edu-meta meta-01">
-                                                <li><i class="icon-time-line"></i>18h 12m 18s</li>
-                                                <li><i class="icon-group-line"></i>65 Students</li>
-                                            </ul>
-                                            <div class="card-bottom">
-                                                <div class="read-more-btn">
-                                                    <a class="btn-transparent" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Card  -->
-
-                            <!-- Start Single Card  -->
-                            <div class="single-slick-card">
-                                <div class="edu-card card-type-5 radius-small">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="course-details.html">
-                                                <img class="w-100" src="assets/images/course/course-01/course-02.jpg" alt="Course Thumb">
-                                            </a>
-                                            <div class="top-position status-group left-top">
-                                                <span class="eduvibe-status status-01 bg-primary-color">Advanced</span>
-                                            </div>
-                                            <div class="wishlist-top-right">
-                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="price-list price-style-03">
-                                                <div class="price current-price">$79.00</div>
-                                            </div>
-                                            <h6 class="title"><a href="course-details.html">Educating Through Christ to Learn And to Serve</a>
-                                            </h6>
-                                            <ul class="edu-meta meta-01">
-                                                <li><i class="icon-time-line"></i>15h 25m 35s</li>
-                                                <li><i class="icon-group-line"></i>83 Students</li>
-                                            </ul>
-                                            <div class="card-bottom">
-                                                <div class="read-more-btn">
-                                                    <a class="btn-transparent" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Card  -->
-
-                            <!-- Start Single Card  -->
-                            <div class="single-slick-card">
-                                <div class="edu-card card-type-5 radius-small">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="course-details.html">
-                                                <img class="w-100" src="assets/images/course/course-01/course-03.jpg" alt="Course Thumb">
-                                            </a>
-                                            <div class="top-position status-group left-top">
-                                                <span class="eduvibe-status status-01 bg-secondary-color">30% Off</span>
-                                                <span class="eduvibe-status status-01 bg-primary-color">Advanced</span>
-                                            </div>
-                                            <div class="wishlist-top-right">
-                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="price-list price-style-03">
-                                                <div class="price current-price">$59.00</div>
-                                                <div class="price old-price">$39.00</div>
-                                            </div>
-                                            <h6 class="title"><a href="course-details.html">Teaching And Living The Life of Christ</a></h6>
-                                            <ul class="edu-meta meta-01">
-                                                <li><i class="icon-time-line"></i>25h 45m 52s</li>
-                                                <li><i class="icon-group-line"></i>95 Students</li>
-                                            </ul>
-                                            <div class="card-bottom">
-                                                <div class="read-more-btn">
-                                                    <a class="btn-transparent" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Card  -->
-
-                            <!-- Start Single Card  -->
-                            <div class="single-slick-card">
-                                <div class="edu-card card-type-5 radius-small">
-                                    <div class="inner">
-                                        <div class="thumbnail">
-                                            <a href="course-details.html">
-                                                <img class="w-100" src="assets/images/course/course-01/course-04.jpg" alt="Course Thumb">
-                                            </a>
-                                            <div class="top-position status-group left-top">
-                                                <span class="eduvibe-status status-01 bg-primary-color">Intermediate</span>
-                                            </div>
-                                            <div class="wishlist-top-right">
-                                                <button class="wishlist-btn"><i class="icon-Heart"></i></button>
-                                            </div>
-                                        </div>
-                                        <div class="content">
-                                            <div class="price-list price-style-03">
-                                                <div class="price current-price">$89.00</div>
-                                            </div>
-                                            <h6 class="title"><a href="course-details.html">Teaching And Living The Life of Christ</a></h6>
-                                            <ul class="edu-meta meta-01">
-                                                <li><i class="icon-time-line"></i>25h 21m 35s</li>
-                                                <li><i class="icon-group-line"></i>53 Students</li>
-                                            </ul>
-                                            <div class="card-bottom">
-                                                <div class="read-more-btn">
-                                                    <a class="btn-transparent" href="course-details.html">Enroll Now<i class="icon-arrow-right-line-right"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Single Card  -->
-                        </div>
-                    </div>
-                </div>
-
-                <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
-                    <div class="shape-image shape-image-1">
-                        <img src="assets/images/shapes/shape-13-10.png" alt="Shape Thumb" />
-                    </div>
-                    <div class="shape-image shape-image-2">
-                        <img src="assets/images/shapes/shape-04-03.png" alt="Shape Thumb" />
-                    </div>
-                    <div class="shape-image shape-image-3">
-                        <img src="assets/images/shapes/shape-15-03.png" alt="Shape Thumb" />
-                    </div>
-                    <div class="shape-image shape-image-4">
-                        <img src="assets/images/shapes/shape-03-07.png" alt="Shape Thumb" />
-                    </div>
-                </div>
-
-            </div>
-        </div>
         <!-- End Featured Course  -->
 
-        <!-- Start Team Area  -->
-        <div class="eduvibe-home-five-instructor edu-elements-area edu-section-gap bg-color-white">
-            <div class="container eduvibe-animated-shape">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                            <span class="pre-title">Skilled Instructor</span>
-                            <h3 class="title">Introduce Our Life Coaches</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="row g-5 mt--5">
 
-                    <!-- Start Instructor Grid  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-instructor-grid edu-instructor-2">
-                            <div class="edu-instructor">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <a href="instructor-profile.html">
-                                            <img src="assets/images/instructor/instructor-02/instructor-1.jpg" alt="team images">
-                                        </a>
-                                    </div>
-                                    <div class="team-share-info">
-                                        <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
-                                        <a class="facebook" href="#"><i class="icon-Fb"></i></a>
-                                        <a class="twitter" href="#"><i class="icon-Twitter"></i></a>
-                                        <a class="youtube" href="#"><i class="icon-youtube"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="edu-instructor-info">
-                                <h5 class="title"><a href="instructor-profile.html">Mark R. Ronson</a></h5>
-                                <span class="desc">UI Designer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Instructor Grid  -->
-
-                    <!-- Start Instructor Grid  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-instructor-grid edu-instructor-2">
-                            <div class="edu-instructor">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <a href="instructor-profile.html">
-                                            <img src="assets/images/instructor/instructor-02/instructor-2.jpg" alt="team images">
-                                        </a>
-                                    </div>
-                                    <div class="team-share-info">
-                                        <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
-                                        <a class="facebook" href="#"><i class="icon-Fb"></i></a>
-                                        <a class="twitter" href="#"><i class="icon-Twitter"></i></a>
-                                        <a class="youtube" href="#"><i class="icon-youtube"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="edu-instructor-info">
-                                <h5 class="title"><a href="instructor-profile.html">Leone P. Xaviona</a></h5>
-                                <span class="desc">Digital Marketer</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Instructor Grid  -->
-
-                    <!-- Start Instructor Grid  -->
-                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 mt--45" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
-                        <div class="edu-instructor-grid edu-instructor-2">
-                            <div class="edu-instructor">
-                                <div class="inner">
-                                    <div class="thumbnail">
-                                        <a href="instructor-profile.html">
-                                            <img src="assets/images/instructor/instructor-02/instructor-3.jpg" alt="team images">
-                                        </a>
-                                    </div>
-                                    <div class="team-share-info">
-                                        <a class="linkedin" href="#"><i class="icon-linkedin"></i></a>
-                                        <a class="facebook" href="#"><i class="icon-Fb"></i></a>
-                                        <a class="twitter" href="#"><i class="icon-Twitter"></i></a>
-                                        <a class="youtube" href="#"><i class="icon-youtube"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="edu-instructor-info">
-                                <h5 class="title"><a href="instructor-profile.html">Yokollili V. Nauia</a></h5>
-                                <span class="desc">SEO Expert</span>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Instructor Grid  -->
-                </div>
-
-                <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
-                    <div class="shape-image shape-image-1">
-                        <img src="assets/images/shapes/shape-03-05.png" alt="Shape Thumb" />
-                    </div>
-                    <div class="shape-image shape-image-2">
-                        <img src="assets/images/shapes/shape-08.png" alt="Shape Thumb" />
-                    </div>
-                    <div class="shape-image shape-image-3">
-                        <img src="assets/images/shapes/shape-34.png" alt="Shape Thumb" />
-                    </div>
-                    <div class="shape-image shape-image-4">
-                        <img src="assets/images/shapes/shape-27-02.png" alt="Shape Thumb" />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Team Area  -->
 
         <div class="eduvibe-home-five-progress edu-service-area edu-section-gap bg-image" id="services">
             <!-- Start Service Area  -->
             <div class="container eduvibe-animated-shape">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="section-title text-center" data-sal-delay="150" data-sal="slide-up"
+                            data-sal-duration="800">
                             <span class="pre-title">Our Services</span>
                             <h3 class="title">How Does Mr.Focus Work?</h3>
                         </div>
@@ -617,7 +451,8 @@
                 </div>
                 <div class="row g-5 mt--20">
                     <!-- Start Service Grid  -->
-                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up"
+                        data-sal-duration="800">
                         <div class="service-card service-card-7 shape-bg-1">
                             <div class="inner">
                                 <div class="icon">
@@ -627,7 +462,8 @@
                                 </div>
                                 <div class="content">
                                     <h6 class="title"><a href="#">School Motivational Speeches</a></h6>
-                                    <p class="description">Inspire students to dream big, set goals, and overcome obstacles with powerful motivational speeches tailored for school audiences.</p>
+                                    <p class="description">Inspire students to dream big, set goals, and overcome
+                                        obstacles with powerful motivational speeches tailored for school audiences.</p>
                                 </div>
                             </div>
                         </div>
@@ -635,7 +471,8 @@
                     <!-- End Service Grid  -->
 
                     <!-- Start Service Grid  -->
-                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up"
+                        data-sal-duration="800">
                         <div class="service-card service-card-7 shape-bg-2">
                             <div class="inner">
                                 <div class="icon">
@@ -645,7 +482,8 @@
                                 </div>
                                 <div class="content">
                                     <h6 class="title"><a href="#">College Seminars</a></h6>
-                                    <p class="description">Empower college students to navigate challenges, embrace opportunities, and achieve success in academics and beyond.</p>
+                                    <p class="description">Empower college students to navigate challenges, embrace
+                                        opportunities, and achieve success in academics and beyond.</p>
                                 </div>
                             </div>
                         </div>
@@ -653,7 +491,8 @@
                     <!-- End Service Grid  -->
 
                     <!-- Start Service Grid  -->
-                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <div class="service-card-single col-lg-4 col-md-6 col-12" data-sal-delay="150" data-sal="slide-up"
+                        data-sal-duration="800">
                         <div class="service-card service-card-7 shape-bg-3">
                             <div class="inner">
                                 <div class="icon">
@@ -663,7 +502,9 @@
                                 </div>
                                 <div class="content">
                                     <h6 class="title"><a href="#">Youth Workshops</a></h6>
-                                    <p class="description">Engaging and interactive workshops designed to foster leadership skills, boost confidence, and cultivate a growth mindset among young adults.</p>
+                                    <p class="description">Engaging and interactive workshops designed to foster
+                                        leadership skills, boost confidence, and cultivate a growth mindset among young
+                                        adults.</p>
                                 </div>
                             </div>
                         </div>
@@ -687,31 +528,93 @@
             <!-- End Service Area  -->
         </div>
 
+        <div class="slideshow-container" style="margin-top: 1%; margin-bottom: 1%;">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 6</div>
+                <img src="assets/images/gallery/gallery-images/1.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 6</div>
+                <img src="assets/images/gallery/gallery-images/2.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 6</div>
+                <img src="assets/images/gallery/gallery-images/3.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 6</div>
+                <img src="assets/images/gallery/gallery-images/4.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 6</div>
+                <img src="assets/images/gallery/gallery-images/5.jpg" style="width:100%">
+
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="assets/images/gallery/gallery-images/6.jpg" style="width:100%">
+
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+
         <!-- Start Testimonial Area  -->
-        <div class="eduvibe-home-five-testimonial edu-testimonial-area testimonial-style-5 edu-section-gap bg-color-white">
+        <div
+            class="eduvibe-home-five-testimonial edu-testimonial-area testimonial-style-5 edu-section-gap bg-color-white">
             <div class="container eduvibe-animated-shape">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6">
                         <div class="banner-thumbnail">
-                            <img src="assets/images/testimonial-section/testimonial-section-03.jpg" alt="Testimonial Images">
+                            <img src="assets/images/testimonial-section/testimonial-section-03.jpg"
+                                alt="Testimonial Images">
                         </div>
                     </div>
 
                     <div class="col-lg-6">
                         <div class="content-wrapper pb_md--50 pb_sm--50">
-                            <div class="section-title text-start mb--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                            <div class="section-title text-start mb--40" data-sal-delay="150" data-sal="slide-up"
+                                data-sal-duration="800">
                                 <span class="pre-title">Testimonials</span>
                                 <h3 class="title">Our Students Feedback</h3>
                             </div>
                             <!-- <div class="eduvibe-home-five-testimonial eduvibe-testimonial-three inner slick-arrow-style-2 edu-slick-button slick-button-left"> -->
-                            <div class="eduvibe-testimonial-three inner eduvibe-home-five-testimonial-activation slick-arrow-style-2 edu-slick-button slick-button-left">
+                            <div
+                                class="eduvibe-testimonial-three inner eduvibe-home-five-testimonial-activation slick-arrow-style-2 edu-slick-button slick-button-left">
 
                                 <!-- Start Tastimonial Card  -->
                                 <div class="testimonial-card-box variation-3">
-                                    <p class="description" style="text-align: justify;">“ Attending Mr.Focus's motivational session was truly life-changing! I feel more focused and determined to achieve my goals than ever before.</p>
+                                    <p class="description" style="text-align: justify;">“ Attending Mr.Focus's
+                                        motivational session was truly life-changing! I feel more focused and determined
+                                        to achieve my goals than ever before.</p>
                                     <div class="client-info">
                                         <div class="thumbnail">
-                                            <img src="assets/images/testimonial/testimonial-04/client-01.png" alt="Client Images">
+                                            <img src="assets/images/testimonial/testimonial-04/client-01.png"
+                                                alt="Client Images">
                                         </div>
                                         <div class="content">
                                             <h6 class="title">Janakrishnamoorthy</h6>
@@ -723,10 +626,14 @@
 
                                 <!-- Start Tastimonial Card  -->
                                 <div class="testimonial-card-box variation-3">
-                                    <p class="description" style="text-align: justify;">“ Mr.Focus's energy and enthusiasm are contagious! His speeches are not only inspiring but also incredibly motivating. I highly recommend him to all students seeking guidance and inspiration.</p>
+                                    <p class="description" style="text-align: justify;">“ Mr.Focus's energy and
+                                        enthusiasm are contagious! His speeches are not only inspiring but also
+                                        incredibly motivating. I highly recommend him to all students seeking guidance
+                                        and inspiration.</p>
                                     <div class="client-info">
                                         <div class="thumbnail">
-                                            <img src="assets/images/testimonial/testimonial-04/client-04.png" alt="Client Images">
+                                            <img src="assets/images/testimonial/testimonial-04/client-04.png"
+                                                alt="Client Images">
                                         </div>
                                         <div class="content">
                                             <h6 class="title">Nithin</h6>
@@ -738,10 +645,13 @@
 
                                 <!-- Start Tastimonial Card  -->
                                 <div class="testimonial-card-box variation-3">
-                                    <p class="description" style="text-align: justify;">“I was feeling lost and unmotivated, but after hearing Mr. Focus speak, I feel like I have a clear direction and purpose. Thank you for helping me find my focus!</p>
+                                    <p class="description" style="text-align: justify;">“I was feeling lost and
+                                        unmotivated, but after hearing Mr. Focus speak, I feel like I have a clear
+                                        direction and purpose. Thank you for helping me find my focus!</p>
                                     <div class="client-info">
                                         <div class="thumbnail">
-                                            <img src="assets/images/testimonial/testimonial-04/client-03.png" alt="Client Images">
+                                            <img src="assets/images/testimonial/testimonial-04/client-03.png"
+                                                alt="Client Images">
                                         </div>
                                         <div class="content">
                                             <h6 class="title">Nagavishnu</h6>
@@ -778,11 +688,12 @@
         <!-- End Testimonial Area  -->
 
         <!-- Start Blog Area  -->
-<div class="edu-contact-us-area eduvibe-contact-us edu-section-gap bg-color-white" id="contact">
+        <div class="edu-contact-us-area eduvibe-contact-us edu-section-gap bg-color-white" id="contact">
             <div class="container eduvibe-animated-shape">
                 <div class="row g-5">
                     <div class="col-lg-12">
-                        <div class="section-title text-center sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="section-title text-center sal-animate" data-sal-delay="150" data-sal="slide-up"
+                            data-sal-duration="800">
                             <span class="pre-title">Need Help?</span>
                             <h3 class="title">Get In Touch With us</h3>
                         </div>
@@ -795,7 +706,8 @@
 
 
                                 <!-- Start Contact Info  -->
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 sal-animate" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 sal-animate" data-sal-delay="150"
+                                    data-sal="slide-up" data-sal-duration="800">
                                     <div class="contact-address-card-1 website">
                                         <div class="inner">
                                             <div class="icon">
@@ -803,8 +715,9 @@
                                             </div>
                                             <div class="content">
                                                 <h6 class="title">Our Website</h6>
-                                                <p><a href="https://example.com/" target="_blank">www.mr.focus.com</a></p>
-                                              
+                                                <p><a href="https://example.com/" target="_blank">www.mr.focus.com</a>
+                                                </p>
+
                                             </div>
                                         </div>
                                     </div>
@@ -812,7 +725,8 @@
                                 <!-- End Contact Info  -->
 
                                 <!-- Start Contact Info  -->
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 sal-animate" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 sal-animate" data-sal-delay="200"
+                                    data-sal="slide-up" data-sal-duration="800">
                                     <div class="contact-address-card-1 phone">
                                         <div class="inner">
                                             <div class="icon">
@@ -828,7 +742,8 @@
                                 <!-- End Contact Info  -->
 
                                 <!-- Start Contact Info  -->
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 sal-animate" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 sal-animate" data-sal-delay="250"
+                                    data-sal="slide-up" data-sal-duration="800">
                                     <div class="contact-address-card-1 email">
                                         <div class="inner">
                                             <div class="icon">
@@ -836,7 +751,8 @@
                                             </div>
                                             <div class="content">
                                                 <h6 class="title">Email Us</h6>
-                                                <p><a href="mailto:mr.focus.kumar@gmail.com" target="_blank">mr.focus.kumar@gmail.com</a></p>
+                                                <p><a href="mailto:mr.focus.kumar@gmail.com"
+                                                        target="_blank">mr.focus.kumar@gmail.com</a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -844,7 +760,8 @@
                                 <!-- End Contact Info  -->
 
                                 <!-- Start Contact Info  -->
-                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 sal-animate" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-12 sal-animate" data-sal-delay="300"
+                                    data-sal="slide-up" data-sal-duration="800">
                                     <div class="contact-address-card-1 location">
                                         <div class="inner">
                                             <div class="icon">
@@ -864,33 +781,39 @@
                     </div>
 
                     <div class="col-lg-6">
-                        <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST" action="https://eduvibe.html.devsvibe.com/mail.php">
+                        <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="POST"
+                            action="https://eduvibe.html.devsvibe.com/mail.php">
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <input name="contact-name" id="contact-name" type="text" class="form-control form-control-lg" placeholder="Name*">
+                                    <input name="contact-name" id="contact-name" type="text"
+                                        class="form-control form-control-lg" placeholder="Name*">
                                 </div>
                             </div>
 
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <input type="email" class="form-control form-control-lg" id="contact-email" name="contact-email" placeholder="Email*">
+                                    <input type="email" class="form-control form-control-lg" id="contact-email"
+                                        name="contact-email" placeholder="Email*">
                                 </div>
                             </div>
 
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" name="contact-phone" id="contact-phone" placeholder="Phone">
+                                    <input type="text" class="form-control form-control-lg" name="contact-phone"
+                                        id="contact-phone" placeholder="Phone">
                                 </div>
                             </div>
 
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control form-control-lg" id="subject" name="subject" placeholder="Subject">
+                                    <input type="text" class="form-control form-control-lg" id="subject" name="subject"
+                                        placeholder="Subject">
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <textarea class="form-control" name="contact-message" id="contact-message" placeholder="Your Message"></textarea>
+                                    <textarea class="form-control" name="contact-message" id="contact-message"
+                                        placeholder="Your Message"></textarea>
                                 </div>
                             </div>
                             <div class="col-lg-12">
@@ -903,8 +826,10 @@
                 </div>
 
                 <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
-                    <div class="shape-image scene shape-image-1" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
-                        <span data-depth="-2.2" style="transform: translate3d(16px, -12.9px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+                    <div class="shape-image scene shape-image-1"
+                        style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+                        <span data-depth="-2.2"
+                            style="transform: translate3d(16px, -12.9px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
                             <img src="assets/images/shapes/shape-04-01.png" alt="Shape Thumb">
                         </span>
                     </div>
@@ -922,8 +847,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="google-map alignwide sal-animate" data-sal="slide-up" data-sal-delay="150" data-sal-duration="800">
-                            <iframe class="radius-small" src="https://maps.google.com/maps?q=2880%20Broadway,%20New%20York&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        <div class="google-map alignwide sal-animate" data-sal="slide-up" data-sal-delay="150"
+                            data-sal-duration="800">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.205170097542!2d77.61972467586337!3d9.999904473034691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b073f122c7f5fd3%3A0xa58d026c4f293f77!2sAana%20Vegetable%20Shop!5e0!3m2!1sen!2sin!4v1709808428962!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
@@ -943,12 +869,15 @@
                                         <img class="logo-light" src="assets/images/logo/logo-white.png" alt="Site Logo">
                                     </a>
                                 </div>
-                                <p class="description" style="text-align: justify;">Feel free to adjust the contact information, social media links, and quick links according to your preferences and the layout of your website. Let me know if you need further customization or assistance!</p>
+                                <p class="description" style="text-align: justify;">Feel free to adjust the contact
+                                    information, social media links, and quick links according to your preferences and
+                                    the layout of your website. Let me know if you need further customization or
+                                    assistance!</p>
                                 <ul class="social-share">
                                     <li><a href="#"><i class="icon-Fb"></i></a></li>
                                     <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
-                                    <li><a href="#"><i class="icon-Twitter"></i></a></li>
+                                    <li><a href="https://wa.me/8248212728"><i class="fa fa-whatsapp"></i></a></li>
+                                   
                                 </ul>
                             </div>
                         </div>
@@ -963,7 +892,7 @@
                                         <li><a href="#service"><i class="icon-Double-arrow"></i>Our Services</a></li>
                                         <li><a href="#"><i class="icon-Double-arrow"></i>Gallery</a></li>
                                         <li><a href="#contact"><i class="icon-Double-arrow"></i>Contact Us</a></li>
-                                       
+
                                     </ul>
                                 </div>
                             </div>
@@ -979,7 +908,7 @@
                                         <li><a href="#"><i class="icon-Double-arrow"></i>Class 3</a></li>
                                         <li><a href="#"><i class="icon-Double-arrow"></i>Class 4</a></li>
                                         <li><a href="#"><i class="icon-Double-arrow"></i>Class 5</a></li>
-                                     
+
                                     </ul>
                                 </div>
                             </div>
@@ -991,10 +920,14 @@
                                 <div class="inner">
                                     <div class="widget-information">
                                         <ul class="information-list">
-                                            <li><i class="icon-map-pin-line"></i>Akshibiwin Kudil Kumarapuram, Andippatti Tamil Nadu 625512. 
+                                            <li><i class="icon-map-pin-line"></i>Akshibiwin Kudil Kumarapuram,
+                                                Andippatti Tamil Nadu 625512.
                                             </li>
-                                            <li><i class="icon-phone-fill"></i><a href="tel:+91 8248212728">+91 8248212728</a></li>
-                                            <li><i class="icon-mail-line-2"></i><a target="_blank" href="mailto:yourmailaddress@example.com">mr.focus.kumar@gmail.com</a></li>
+                                            <li><i class="icon-phone-fill"></i><a href="tel:+91 8248212728">+91
+                                                    8248212728</a></li>
+                                            <li><i class="icon-mail-line-2"></i><a target="_blank"
+                                                    href="mailto:yourmailaddress@example.com">mr.focus.kumar@gmail.com</a>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1017,7 +950,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="inner text-center">
-                                <p>Copyright 2024 <a href="https://nearlooks.com/" target="_blank">Nearlooks</a>. All Rights Reserved</p>
+                                <p>Copyright 2024 <a href="https://nearlooks.com/" target="_blank">Nearlooks</a>. All
+                                    Rights Reserved</p>
                             </div>
                         </div>
                     </div>
@@ -1035,6 +969,22 @@
     <!-- JS
 ============================================ -->
     <!-- Modernizer JS -->
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
     <script src="assets/js/vendor/modernizr.min.js"></script>
     <!-- jQuery JS -->
     <script src="assets/js/vendor/jquery.js"></script>
@@ -1060,4 +1010,5 @@
 
 
 <!-- Mirrored from eduvibe.html.devsvibe.com/index-five.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 23 Feb 2024 06:28:15 GMT -->
+
 </html>
